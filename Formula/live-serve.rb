@@ -1,7 +1,6 @@
 class LiveServe < Formula
   desc "Tiny live-reload dev server: one binary, no Node.js"
   homepage "https://github.com/NguyenTruong354/live-serve"
-  version "0.3.1"
   license "MIT"
 
   on_macos do
