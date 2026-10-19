@@ -1,0 +1,23 @@
+# Installs and tests every formula on macOS (Apple Silicon and Intel) and Linux on each change.
+name: Test formulae
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, macos-13, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@master
+      - name: Tap this repository
+        run: brew tap nguyentruong354/tap "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
+      - run: brew install nguyentruong354/tap/live-serve
+      - run: brew test nguyentruong354/tap/live-serve
+      - run: brew audit nguyentruong354/tap/live-serve
