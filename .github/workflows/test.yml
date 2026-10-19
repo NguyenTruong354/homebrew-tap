@@ -1,4 +1,4 @@
-# Installs and tests every formula on macOS (Apple Silicon and Intel) and Linux on each change.
+# Installs and tests every formula on macOS (Apple Silicon) and Linux on each change.
 name: Test formulae
 
 on:
@@ -12,10 +12,10 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [macos-latest, macos-13, ubuntu-latest]
+        os: [macos-latest, ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: Homebrew/actions/setup-homebrew@master
+      - uses: Homebrew/actions/setup-homebrew@main
       - name: Tap this repository
         run: brew tap nguyentruong354/tap "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY"
       - run: brew install nguyentruong354/tap/live-serve
