@@ -5,24 +5,24 @@ class LiveServe < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/NguyenTruong354/live-serve/releases/download/v0.4.1/live-serve-v0.4.1-aarch64-apple-darwin.tar.gz"
-      sha256 "82fb1652a5a2d5173f25d12e1add8fb51d6bef82e907c29ca6fd48d602f91b89"
+      url "https://github.com/NguyenTruong354/live-serve/releases/download/v0.4.2/live-serve-v0.4.2-aarch64-apple-darwin.tar.gz"
+      sha256 "a812c356c6e36262f900adfdea96cf6b46792b17e42cd6127f86bb0ae7796748"
     end
     on_intel do
-      url "https://github.com/NguyenTruong354/live-serve/releases/download/v0.4.1/live-serve-v0.4.1-x86_64-apple-darwin.tar.gz"
-      sha256 "999c5b5ea44fdc67377677f9d5154b862345a430dd6dcce7c9b7f4ca3369b0ca"
+      url "https://github.com/NguyenTruong354/live-serve/releases/download/v0.4.2/live-serve-v0.4.2-x86_64-apple-darwin.tar.gz"
+      sha256 "81c1ecf10182a109e1af6be717240f3c5e24c2778b64c926d4e6e6d6042d13df"
     end
   end
 
   # Static (musl) binaries: they run on any distribution, old glibc included.
   on_linux do
     on_arm do
-      url "https://github.com/NguyenTruong354/live-serve/releases/download/v0.4.1/live-serve-v0.4.1-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "579dfcd5c6084c09273519d660fbd0f9d5f2f5e6dc9446b45ffb1f752396b6dd"
+      url "https://github.com/NguyenTruong354/live-serve/releases/download/v0.4.2/live-serve-v0.4.2-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "186ea17c0cbe976c3bbfb294d0afa2fb1b6ee20066b1346ddf387ac9fa282d45"
     end
     on_intel do
-      url "https://github.com/NguyenTruong354/live-serve/releases/download/v0.4.1/live-serve-v0.4.1-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "e333a7cfe21cf88d3a8f71e9a12d5e78dc81446dbd35888ae30de484f4ffcd48"
+      url "https://github.com/NguyenTruong354/live-serve/releases/download/v0.4.2/live-serve-v0.4.2-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "ba4daa459ca84e3e4e6b57072da88f35bae388aeff1be3473fd18242d9872e38"
     end
   end
 
